@@ -3,7 +3,6 @@ session_start();
 include '../config/koneksi.php';
 if (!isset($_SESSION['login'])) header("Location: ../auth/login.php");
 
-// LOGIKA SIMPAN BELUM DIBUAT (PROGRESS)
 if (isset($_POST['simpan'])) {
     // Kita hanya tes apakah data terkirim, belum simpan ke DB
     echo "<script type='text/javascript'>alert('Booking Sukses'); window.location='riwayat.php';</script>";
@@ -62,4 +61,5 @@ if (isset($_POST['simpan'])) {
     <div id="footer"><p>&copy; 2025 Lapangan Padel Terjosjis di Jogja</p></div>
 </div>
 </body>
+
 </html>
