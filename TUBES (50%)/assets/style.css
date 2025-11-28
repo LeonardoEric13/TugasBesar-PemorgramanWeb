@@ -1,4 +1,3 @@
-/* Reset Default Browser Styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f0f0;
@@ -7,7 +6,6 @@ body {
     color: #333;
 }
 
-/* Layout Wrapper - Centering (Minggu 8 Slide 331) */
 #wrapper {
     width: 800px;
     margin: 20px auto; /* Auto margin untuk tengah */
@@ -15,7 +13,6 @@ body {
     border: 1px solid #ccc;
 }
 
-/* Header */
 #header {
     background-color: #333;
     color: #fff;
@@ -28,8 +25,6 @@ body {
     padding: 0;
     font-size: 24px;
 }
-
-/* Navigation - Floating Layout (Minggu 8 Slide 342) */
 #nav {
     float: left;
     width: 180px;
@@ -60,7 +55,6 @@ body {
     background-color: #ccc;
 }
 
-/* Content - Floating Layout (Minggu 8 Slide 342) */
 #content {
     float: right;
     width: 580px; /* Sisa dari 800px - 200px nav - padding */
@@ -68,7 +62,6 @@ body {
     min-height: 400px;
 }
 
-/* Footer - Clear Float (Minggu 8 Slide 342 "clear: both") */
 #footer {
     clear: both;
     background-color: #333;
@@ -78,12 +71,10 @@ body {
     font-size: 12px;
 }
 
-/* Utilities */
 .center-text { text-align: center; }
 .info-box { background-color: #ffc; border: 1px solid #fc0; padding: 10px; margin-bottom: 15px; }
 .error-msg { color: red; font-weight: bold; }
 
-/* Form Styles (Pengganti atribut size, cols, rows) */
 input, select {
     border: 1px solid #ccc;
     padding: 5px;
@@ -97,8 +88,6 @@ label {
     margin-top: 10px;
 }
 
-/* Table Styles (Pengganti border="1" cellpadding="5") */
-/* Minggu 4 & 8 Slide 212 */
 table {
     width: 100%;
     border-collapse: collapse;
