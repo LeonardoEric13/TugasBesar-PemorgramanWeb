@@ -1,6 +1,4 @@
-DROP DATABASE IF EXISTS db_sewa_padel;
 CREATE DATABASE db_sewa_padel;
-USE db_sewa_padel;
 
 -- 1. Tabel Users
 CREATE TABLE users (
@@ -34,7 +32,8 @@ CREATE TABLE sewa (
     FOREIGN KEY (lapangan_id) REFERENCES lapangan(id)
 );
 
--- 4. Data Dummy Lapangan
+-- 4. Data Lapangan
 INSERT INTO lapangan (nama_lapangan, harga_dasar, deskripsi) VALUES 
 ('Court A (Indoor)', 100000, 'Lapangan Indoor Karpet'),
+
 ('Court B (Outdoor)', 80000, 'Lapangan Outdoor Semen');
