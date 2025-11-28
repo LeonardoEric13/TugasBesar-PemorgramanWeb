@@ -3,10 +3,6 @@ session_start();
 include '../config/koneksi.php';
 $uid = $_SESSION['uid'];
 
-// LOGIKA UPDATE BELUM ADA
-// if (isset($_POST['update'])) { ... }
-
-// Tapi Read Data User sudah jalan
 $d = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM users WHERE id='$uid'"));
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -25,4 +21,5 @@ $d = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM users WHERE id='$uid'
     <div id="footer"><p>&copy; 2025 Lapangan Padel Terjosjis di Jogja</p></div>
 </div>
 </body>
+
 </html>
