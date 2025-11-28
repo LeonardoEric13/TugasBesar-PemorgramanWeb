@@ -7,7 +7,7 @@ function hitungTotal() {
     var display = document.getElementById("info_harga");
 
     var hargaDasar = 0;
-    // Mengambil data-harga (DOM Standard)
+
     if(elLap.selectedIndex > 0) {
         hargaDasar = parseInt(elLap.options[elLap.selectedIndex].getAttribute("data-harga"));
     }
@@ -21,7 +21,6 @@ function hitungTotal() {
     var tambahan = 0;
     var info = "Normal";
 
-    // Cek Weekend
     if(elTgl.value !== "") {
         var d = new Date(elTgl.value);
         var day = d.getDay();
@@ -31,7 +30,6 @@ function hitungTotal() {
         }
     }
 
-    // Cek Malam
     if(elJam.value !== "") {
         var jamStr = elJam.value.split(":");
         var jam = parseInt(jamStr[0]);
@@ -43,4 +41,5 @@ function hitungTotal() {
 
     var total = ((hargaDasar + tambahan) * durasi) + (raket * 15000);
     display.innerHTML = "Estimasi: Rp " + total + " (" + info + ")";
+
 }
