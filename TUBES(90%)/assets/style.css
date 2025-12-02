@@ -1,0 +1,158 @@
+/* Reset Default Browser Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+/* Layout Wrapper - Centering (Minggu 8 Slide 331) */
+#wrapper {
+    width: 800px;
+    margin: 20px auto; /* Auto margin untuk tengah */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
+
+
+/* Header */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center; /* Pengganti align="center" */
+}
+
+
+#header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+
+/* Navigation - Floating Layout (Minggu 8 Slide 342) */
+#nav {
+    float: left;
+    width: 180px;
+    background-color: #e9e9e9;
+    padding: 10px;
+    min-height: 400px;
+}
+
+
+#nav ul {
+    list-style-type: none; /* Hilangkan bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+
+#nav li {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+#nav a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 5px;
+}
+
+
+#nav a:hover {
+    background-color: #ccc;
+}
+
+
+/* Content - Floating Layout (Minggu 8 Slide 342) */
+#content {
+    float: right;
+    width: 580px; /* Sisa dari 800px - 200px nav - padding */
+    padding: 10px;
+    min-height: 400px;
+}
+
+
+/* Footer - Clear Float (Minggu 8 Slide 342 "clear: both") */
+#footer {
+    clear: both;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+/* Utilities */
+.center-text { text-align: center; }
+.info-box { background-color: #ffc; border: 1px solid #fc0; padding: 10px; margin-bottom: 15px; }
+.error-msg { color: red; font-weight: bold; }
+
+
+/* Form Styles (Pengganti atribut size, cols, rows) */
+input, select {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+
+label {
+    display: block; /* Agar label ada di atas input */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* Table Styles (Pengganti border="1" cellpadding="5") */
+/* Minggu 4 & 8 Slide 212 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+
+th, td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: left;
+}
+
+
+th {
+    background-color: #eee;
+}
+
+
+#logout-section {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #e9e9e9;
+    margin-top: 260px;
+}
+
+
+#logout-section a {
+    display: block;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+
+#logout-section a:hover {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
