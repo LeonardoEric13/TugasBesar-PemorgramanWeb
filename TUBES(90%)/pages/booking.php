@@ -46,7 +46,7 @@ if (isset($_POST['simpan'])) {
     <link rel="stylesheet" type="text/css" href="../assets/style.css" />
     <script type="text/javascript" src="../assets/script.js"></script>
 </head>
-<body>
+<body class="has-sidebar">
 <div id="wrapper">
     <div id="header"><h1>Form Booking</h1></div>
     <div id="nav">
@@ -103,3 +103,4 @@ if (isset($_POST['simpan'])) {
 </div>
 </body>
 </html>
+
