@@ -25,7 +25,9 @@ if (!isset($_SESSION['login'])) {
             <li><a href="pages/booking.php">Sewa Lapangan</a></li>
             <li><a href="pages/riwayat.php">Riwayat</a></li>
             <li><a href="pages/profil.php">Profil</a></li>
-            <li><a href="auth/logout.php">Logout</a></li>
+            <div id="logout-section">
+                <a href="logout.php" onclick="return confirm('Apakah Anda yakin ingin keluar?');">Logout</a>
+            </div>
         </ul>
     </div>
 
@@ -42,4 +44,5 @@ if (!isset($_SESSION['login'])) {
 </div>
 
 </body>
+
 </html>
