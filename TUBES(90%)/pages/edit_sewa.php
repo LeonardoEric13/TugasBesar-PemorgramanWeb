@@ -64,7 +64,7 @@ if (isset($_POST['update'])) {
     <link rel="stylesheet" type="text/css" href="../assets/style.css" />
     <script type="text/javascript" src="../assets/script.js"></script>
 </head>
-<body>
+<body class="has-sidebar">
 
 <div id="wrapper">
     <div id="header">
@@ -146,4 +146,5 @@ if (isset($_POST['update'])) {
 </div>
 
 </body>
+
 </html>
