@@ -17,6 +17,9 @@ if (isset($_POST['update'])) {
     mysqli_query($conn, $sql);
     
     $_SESSION['nama'] = $nama;
+    
+    header("Location: ../dashboard.php");
+    exit();
 }
 
 if (isset($_POST['hapus'])) {
@@ -47,7 +50,7 @@ $page_title = "Profil";
     <div id="header"><h1>Profil Saya</h1></div>
     <div id="nav"><ul><li><a href="../dashboard.php">Home</a></li></ul></div>
     <div id="content">
-        <form action="" method="post">
+        <form action="" method="post" onsubmit="return confirm('Apakah Anda yakin ingin menyimpan perubahan profil?');">
             <div><label>Nama:</label><input type="text" name="nama" value="<?php echo $user['nama_lengkap']; ?>" /></div>
             <div><label>Email:</label><input type="text" name="email" value="<?php echo $user['email']; ?>" /></div>
             <div><input type="submit" name="update" value="Simpan" /></div>
