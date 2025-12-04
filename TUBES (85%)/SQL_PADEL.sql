@@ -37,5 +37,5 @@ CREATE TABLE sewa (
 
 -- 4. Data Dummy Lapangan
 INSERT INTO lapangan (nama_lapangan, harga_dasar, deskripsi) VALUES 
-('Court A (Indoor)', 100000, 'Lapangan Indoor Karpet'),
-('Court B (Outdoor)', 80000, 'Lapangan Outdoor Semen');
+('Court A (Indoor)', 200000, 'Lapangan Indoor Karpet'),
+('Court B (Outdoor)', 150000, 'Lapangan Outdoor Semen');
