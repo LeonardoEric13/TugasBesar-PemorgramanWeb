@@ -3,9 +3,11 @@ session_start();
 require_once '../config/koneksi.php';
 
 
+
 $error_message = '';
 $success_message = '';
 $page_title = 'Registrasi Member';
+
 
 
 if (isset($_POST['daftar'])) {
@@ -14,14 +16,18 @@ if (isset($_POST['daftar'])) {
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     
     // Cek nama dan email sudah terdaftar
-    $cek = mysqli_query($conn, "SELECT * FROM users WHERE nama_lengkap = '$nama' OR email = '$email'");
-    if (mysqli_num_rows($cek) > 0) {
-        $data = mysqli_fetch_assoc($cek);
-        if ($data['email'] == $email) {
-            $error_message = 'Email sudah terdaftar!';
-        } else if ($data['nama_lengkap'] == $nama) {
-            $error_message = 'Nama sudah terdaftar!';
-        }
+    $cek_email = mysqli_query($conn, "SELECT * FROM users WHERE email = '$email'");
+    $cek_nama = mysqli_query($conn, "SELECT * FROM users WHERE nama_lengkap = '$nama'");
+    
+    $email_ada = mysqli_num_rows($cek_email) > 0;
+    $nama_ada = mysqli_num_rows($cek_nama) > 0;
+    
+    if ($email_ada && $nama_ada) {
+        $error_message = 'Email dan Username sudah digunakan!';
+    } else if ($email_ada) {
+        $error_message = 'Email sudah terdaftar!';
+    } else if ($nama_ada) {
+        $error_message = 'Nama sudah terdaftar!';
     } else {
         $sql = "INSERT INTO users (nama_lengkap, email, password) VALUES ('$nama', '$email', '$password')";
         if (mysqli_query($conn, $sql)) {
