@@ -1,15 +1,4 @@
 <?php
-/**
- * booking.php
- * Halaman booking lapangan
- * 
- * Pola sesuai materi PPT Minggu 14:
- * 1. session_start() - memulai session
- * 2. Include koneksi dan fungsi
- * 3. Query SELECT untuk ambil data
- * 4. Validasi input
- * 5. INSERT data ke database
- */
 
 // 1. Memulai session - sesuai materi: session_start()
 session_start();
@@ -274,3 +263,4 @@ hitungTotal();
 </script>
 </body>
 </html>
+
