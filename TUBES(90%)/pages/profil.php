@@ -2,12 +2,15 @@
 session_start();
 require_once '../config/koneksi.php';
 
+
 if (!isset($_SESSION['login'])) {
     header("Location: ../auth/login.php");
     exit();
 }
 
+
 $user_id = $_SESSION['user_id'];
+
 
 if (isset($_POST['update'])) {
     $nama = mysqli_real_escape_string($conn, $_POST['nama']);
@@ -22,6 +25,7 @@ if (isset($_POST['update'])) {
     exit();
 }
 
+
 if (isset($_POST['hapus'])) {
     $sql_sewa = "DELETE FROM sewa WHERE user_id = '$user_id'";
     mysqli_query($conn, $sql_sewa);
@@ -34,8 +38,10 @@ if (isset($_POST['hapus'])) {
     exit();
 }
 
+
 $query = mysqli_query($conn, "SELECT * FROM users WHERE id = '$user_id'");
 $user = mysqli_fetch_assoc($query);
+
 
 $page_title = "Profil";
 ?>
@@ -66,4 +72,3 @@ $page_title = "Profil";
 </div>
 </body>
 </html>
-
