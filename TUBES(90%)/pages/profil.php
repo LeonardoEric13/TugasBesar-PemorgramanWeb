@@ -45,7 +45,7 @@ $page_title = "Profil";
     <title>Profil</title>
     <link rel="stylesheet" type="text/css" href="../assets/style.css" />
 </head>
-<body>
+<body class="has-sidebar">
 <div id="wrapper">
     <div id="header"><h1>Profil Saya</h1></div>
     <div id="nav"><ul><li><a href="../dashboard.php">Home</a></li></ul></div>
@@ -66,3 +66,4 @@ $page_title = "Profil";
 </div>
 </body>
 </html>
+
