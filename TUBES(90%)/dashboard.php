@@ -20,7 +20,7 @@ $page_title = "Dashboard";
     <title><?php echo $page_title; ?></title>
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
 </head>
-<body>
+<body class="has-sidebar">
 
 <div id="wrapper">
     <div id="header">
@@ -55,3 +55,4 @@ $page_title = "Dashboard";
 
 </body>
 </html>
+
