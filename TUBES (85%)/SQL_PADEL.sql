@@ -23,6 +23,7 @@ CREATE TABLE sewa (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT,
     lapangan_id INT,
+    nomor_lapangan INT NOT NULL DEFAULT 1,
     tanggal_main DATE,
     jam_mulai TIME,
     durasi_jam INT,
