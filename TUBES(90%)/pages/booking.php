@@ -53,8 +53,12 @@ if (isset($_POST['simpan'])) {
         <ul>
             <li><a href="../dashboard.php">Home</a></li>
             <li><a href="riwayat.php">Riwayat</a></li>
-            <li><a href="../auth/logout.php">Logout</a></li>
         </ul>
+
+        <div id="logout-section">
+            <a href="auth/logout.php"
+               onclick="return confirm('Apakah Anda yakin ingin keluar?');">Logout</a>
+        </div>
     </div>
     <div id="content">
         <div class="info-box">
