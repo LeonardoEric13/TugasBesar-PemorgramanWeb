@@ -113,4 +113,30 @@ th, td {
 
 th {
     background-color: #eee;
+
+}
+
+#logout-section {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #e9e9e9;
+    margin-top: 260px;
+}
+
+
+#logout-section a {
+    display: block;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+
+#logout-section a:hover {
+    background-color: red;
+    color: white;
+    border-color: red;
 }
