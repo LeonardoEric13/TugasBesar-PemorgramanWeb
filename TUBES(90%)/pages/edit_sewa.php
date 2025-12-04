@@ -76,6 +76,11 @@ if (isset($_POST['update'])) {
             <li><a href="../dashboard.php">Home</a></li>
             <li><a href="riwayat.php">Kembali</a></li>
         </ul>
+
+        <div id="logout-section">
+            <a href="auth/logout.php"
+               onclick="return confirm('Apakah Anda yakin ingin keluar?');">Logout</a>
+        </div>
     </div>
 
     <div id="content">
